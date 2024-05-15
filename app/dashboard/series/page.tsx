@@ -9,7 +9,9 @@ interface Movie {
   backdrop_path : string
   vote_average : number,
   name : string
+  overview: string
 }
+
 
 export default async function Page() {
   const Webseries = await fetchWebSeries();

@@ -13,7 +13,10 @@ interface Movie {
   backdrop_path : string
   vote_average : number,
   name : string
+  overview: string
 }
+
+
 
 export interface MovieCardProps {
   movie: Movie;

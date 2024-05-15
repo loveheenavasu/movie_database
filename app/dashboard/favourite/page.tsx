@@ -3,9 +3,18 @@ import useFavoriteStore from "@/app/store/store";
 import MovieCard from "@/app/ui/Card/MovieCard";
 import { Col, Row } from "antd";
 
+interface Movie {
+  id: number;
+  title: string;
+  poster_path: string;
+  backdrop_path : string
+  vote_average : number,
+  name : string
+  overview: string
+}
+
 export default function Page() {
   const { favorites } = useFavoriteStore();
-  console.log("favorites", favorites);
   return (
     <div>
       <h1>Favorite Movies</h1>

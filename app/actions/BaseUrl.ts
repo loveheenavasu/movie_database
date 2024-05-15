@@ -10,9 +10,9 @@ interface Movie {
   id: number;
   title: string;
   poster_path: string;
-  backdrop_path : string
-  vote_average : number,
-  name : string
+  backdrop_path: string
+  vote_average: number,
+  name: string
   overview: string
 }
 
@@ -20,10 +20,12 @@ interface WebSeries {
   id: number;
   title: string;
   poster_path: string;
-  backdrop_path : string
-  vote_average : number,
-  name : string
+  backdrop_path: string
+  vote_average: number,
+  name: string
+  overview: string
 }
+
 
 export enum MediaType {
   Movie = 'movie',

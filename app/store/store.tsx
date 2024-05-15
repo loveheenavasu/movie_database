@@ -5,8 +5,10 @@ interface Movie {
   id: number;
   title: string;
   poster_path: string;
-  vote_average: number;
-  name: string; 
+  backdrop_path : string
+  vote_average : number,
+  name : string
+  overview: string
 }
 
 interface FavoriteStore {
