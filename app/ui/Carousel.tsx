@@ -16,7 +16,6 @@ interface ExplorePageProps {
 
 
 const Slider:React.FC<ExplorePageProps>= ({  trendingMovies }) => {
-  console.log(trendingMovies, "trendingMovies");
   return (
     <>
       <div className="en mr-1">

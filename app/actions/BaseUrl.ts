@@ -3,8 +3,6 @@
 const API_KEY = process.env.API_KEY;
 const API_TOKEN = process.env.API_TOKEN;
 const BASE_URL = 'https://api.themoviedb.org/3';
-console.log('API_KEY',API_KEY)
-
 
 interface Movie {
   id: number;

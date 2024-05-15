@@ -1,7 +1,22 @@
 import React from 'react'
 import Image from 'next/image'
-const ScrollableCard = ({movie}) => {
-  console.log('movie',movie)
+
+interface Movie {
+  id: number;
+  title: string;
+  poster_path: string;
+  backdrop_path : string
+  vote_average : number,
+  name : string
+  overview: string
+}
+
+export interface ScrollableCardProps {
+  movie: Movie;
+}
+
+
+const ScrollableCard: React.FC<ScrollableCardProps> = ({movie}) => {
   return (
     <div className="flex-none w-1/4 mr-3">
       <Image className='rounded-lg w-full h-auto' src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title}width={500} height={300}/>
