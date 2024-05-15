@@ -1,9 +1,10 @@
-import AppBar from "./components/Header/AppBar";
-
-export default function Home() {
+import fetchAllMovies from "./actions/BaseUrl";
+export default async function Home() {
+// const data = await fetchAllMovies()
+// console.log('sdfdg', data)
   return (
     <main>
-      <AppBar />
+      Welcome to Movie App
     </main>
   );
 }
